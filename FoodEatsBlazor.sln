@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEatsBlazor", "FoodEatsBlazor\FoodEatsBlazor.csproj", "{8115D65B-0EDC-4375-B3CA-D67D70B69DEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8115D65B-0EDC-4375-B3CA-D67D70B69DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8115D65B-0EDC-4375-B3CA-D67D70B69DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8115D65B-0EDC-4375-B3CA-D67D70B69DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8115D65B-0EDC-4375-B3CA-D67D70B69DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74A71498-303E-4336-BC9C-387F00C236B4}
+	EndGlobalSection
+EndGlobal
