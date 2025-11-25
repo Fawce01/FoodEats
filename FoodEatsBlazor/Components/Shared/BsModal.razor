@@ -1,0 +1,42 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="confirmationModalLabel">@Title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-lg">
+                <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal"
+                        @onclick="()=>ConfirmClick(false)" style="width:150px;">
+                    Close
+                </button>
+                <button type="button" class="btn btn-lg @ButtonBootstrapStyle" style="width:150px;"
+                        @onclick="()=>ConfirmClick(true)">
+                    @ButtonText
+                </button>
+             </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<bool> OnModalConfirmation { get; set; }
+
+    [Parameter]
+    public string Title { get; set; } = "Please Confirm";
+    [Parameter]
+    public string ButtonBootstrapStyle{ get; set; } = "btn-primary";
+    [Parameter]
+    public string ButtonText { get; set; } = "Confirm";
+
+
+    private async Task ConfirmClick(bool value)
+    {
+        if (value)
+        {
+            await OnModalConfirmation.InvokeAsync(true);
+        }
+    }
+}
